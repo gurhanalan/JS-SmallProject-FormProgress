@@ -10,6 +10,9 @@
 
 html {
     font-size: 62.5%;
+    --color-1: #3d7afd;
+    --color-3: #26f7fd;
+    --color-2: #1f0954;
 }
 
 body {
@@ -21,4 +24,48 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    background-color: var(--color-1);
+}
+
+.form {
+    background-color: var(--color-2);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    border-radius: 3rem;
+}
+
+.input-box {
+    position: relative;
+}
+.input-box input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color-1);
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.input-box input:focus {
+    border-color: var(--color-3);
+}
+
+.input-box label {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.input-box label span {
+    transition: transform 0.3s;
+}
+
+.input-box input:focus + label span {
+    transform: translateY(-1rem);
 }
