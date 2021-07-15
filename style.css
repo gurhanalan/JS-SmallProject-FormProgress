@@ -46,26 +46,33 @@ body {
     outline: none;
     border-bottom: 2px solid var(--color-1);
     padding: 1rem 0.5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
 }
 
-.input-box input:focus {
+.input-box input:focus,
+.input-box input:valid {
     border-color: var(--color-3);
 }
 
 .input-box label {
     position: absolute;
     top: 1.5rem;
-    left: 1rem;
+    left: 0.5rem;
     font-size: 1.6rem;
     color: white;
+    user-select: none;
+    cursor: text;
 }
 
 .input-box label span {
+    display: inline-block;
     transition: transform 0.3s;
+    color: var(--color-1);
 }
 
-.input-box input:focus + label span {
-    transform: translateY(-1rem);
+.input-box input:focus + label span,
+.input-box input:valid + label span {
+    transform: translateY(-2.5rem);
+    color: var(--color-3);
 }
