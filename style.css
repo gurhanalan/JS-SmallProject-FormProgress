@@ -27,14 +27,19 @@ body {
     background-color: var(--color-1);
 }
 
-.form {
+.container {
     background-color: var(--color-2);
+    border-radius: 3rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-
-    border-radius: 3rem;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .input-box {
@@ -76,3 +81,91 @@ body {
     transform: translateY(-2.5rem);
     color: var(--color-3);
 }
+
+/* Progress Bars */
+
+.steps {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    user-select: none;
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-1);
+
+    border: 0.3rem solid var(--color-1);
+    border-radius: 100%;
+    transition: all 1s;
+}
+
+.step--active {
+    transition: all 1s;
+    border-color: var(--color-3);
+    color: var(--color-3);
+}
+
+.bridge {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--color-1);
+    position: relative;
+}
+
+.bridge--active {
+    transition: all 1s;
+}
+.bridge--active::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-3);
+    position: absolute;
+
+    transition: all 1s;
+}
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+.btn {
+    user-select: none;
+
+    background-color: var(--color-1);
+    color: white;
+    padding: 1rem 0;
+    width: 8rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--color-3);
+    filter: brightness(80%);
+}
+.btn:active {
+    /* background-color: var(--color-3); */
+    filter: brightness(100%);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background-color: lightslategray;
+}
+/* &--disabled {
+    cursor: not-allowed;
+    background-color: lighten($color-1-1, 20%);
+
+    &:hover {
+        background-color: lighten($color-1-1, 20%);
+    }
+} */
