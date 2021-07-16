@@ -51,3 +51,36 @@ btnPrev.addEventListener("click", () => {
     btnDisable();
 });
 btnDisable();
+
+// Sliding content
+
+const contents = document.querySelectorAll(".form-box");
+let slideNum = 0;
+
+// FUNCTIONS
+function slider(num) {
+    contents.forEach((box, index) => {
+        box.style.transform = `translateX(${100 * (index - num)}%)`;
+    });
+}
+
+slider(0);
+
+function slideRight() {
+    slideNum++;
+    if (slideNum >= contents.length) {
+        slideNum = 0;
+    }
+    slider(slideNum);
+}
+function slideLeft() {
+    slideNum--;
+    if (slideNum < 0) {
+        slideNum = contents.length - 1;
+    }
+    slider(slideNum);
+}
+
+btnNext.addEventListener("click", slideRight);
+
+btnPrev.addEventListener("click", slideLeft);

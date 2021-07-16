@@ -36,16 +36,27 @@ body {
     gap: 3rem;
     align-items: center;
 }
+
 .form {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+.form-box {
+    top: 2rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    position: absolute;
 }
 
 .input-box {
     position: relative;
 }
 .input-box input {
+    width: 100%;
     background-color: transparent;
     border: none;
     outline: none;
@@ -161,11 +172,3 @@ body {
     cursor: not-allowed;
     background-color: lightslategray;
 }
-/* &--disabled {
-    cursor: not-allowed;
-    background-color: lighten($color-1-1, 20%);
-
-    &:hover {
-        background-color: lighten($color-1-1, 20%);
-    }
-} */
