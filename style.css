@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap");
 
 *,
 *::after,
@@ -35,8 +35,26 @@ body {
     flex-direction: column;
     gap: 3rem;
     align-items: center;
+    box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.199);
 }
 
+h1 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+}
+p a {
+    color: var(--color-1);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
 .form {
     position: relative;
     width: 100%;
