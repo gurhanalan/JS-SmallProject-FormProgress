@@ -1,6 +1,6 @@
 # Form Progress with Input Wave Effect
 
-[This project](https://gurhanalan.github.io/JS-SmallProject-FormProgress/) is a form which the user can click the buttons to see the other input fields and when the input is focused the label shifts up with wave affect.
+[This project](https://gurhanalan.github.io/JS-SmallProject-FormProgress/) is a form which the user can click the buttons to see the other input fields and when the input is focused the label shifts up with wave effect.
 
 ## Table of contents
 
@@ -21,7 +21,7 @@ Users should be able to:
 
 -   View the optimal layout for the app depending on their device's screen size
 -   See hover states for all interactive elements on the page
--   Click the buttons to see the other input fields and when the input is focused the label shifts up with wave affect.
+-   Click the buttons to see the other input fields and when the input is focused the label shifts up with wave effect.
 
 ### Screenshot
 
