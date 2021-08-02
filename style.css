@@ -177,13 +177,25 @@ p a {
     transition: all 0.2s;
 }
 
-.btn:hover {
+.btn-next:disabled {
+    display: none;
+}
+
+.btn-next:disabled + .btn-submit {
+    display: inline-block;
+}
+
+.btn-submit {
+    display: none;
     background-color: var(--color-3);
-    filter: brightness(80%);
+}
+.btn:hover {
+    /* background-color: var(--color-3); */
+    filter: brightness(120%);
 }
 .btn:active {
     /* background-color: var(--color-3); */
-    filter: brightness(100%);
+    filter: brightness(140%);
 }
 
 .btn:disabled {

@@ -84,3 +84,11 @@ function slideLeft() {
 btnNext.addEventListener("click", slideRight);
 
 btnPrev.addEventListener("click", slideLeft);
+
+// Form submit
+const btnSubmit = document.querySelector(".btn-submit");
+const form = document.querySelector(".form");
+
+btnSubmit.addEventListener("click", () => {
+    form.submit();
+});
